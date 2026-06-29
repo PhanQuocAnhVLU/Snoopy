@@ -205,7 +205,7 @@ export const AuthProvider = ({ children }) => {
       return { success: true, user: userData };
     } catch (error) {
       console.error('Lỗi đăng nhập Firebase:', error);
-      return { success: false, error: 'Đăng nhập bị hủy hoặc có lỗi xảy ra.' };
+      return { success: false, error: `Lỗi: ${error.message || 'Đăng nhập bị hủy'}` };
     }
   };
 
