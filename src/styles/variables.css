@@ -1,0 +1,70 @@
+/* ====================================================
+   Snoopy Coffee — Design System Variables
+   ==================================================== */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&family=Playfair+Display:wght@700;800&display=swap');
+
+:root {
+  /* Brand Colors - Snoopy take-away */
+  --snoopy-brown:       #6B3E26; /* primary warm coffee */
+  --snoopy-brown-dark:  #3E2B23;
+  --snoopy-cream:       #FFF8E8; /* soft background */
+  --snoopy-accent:      #E85A4F; /* lively accent */
+  --snoopy-black:       #1a1a1a;
+  --snoopy-muted:       #7a6f67;
+  --snoopy-border:      #eee6de;
+  --snoopy-white:       #ffffff;
+
+  /* Semantic Mappings */
+  --primary:            var(--snoopy-brown);
+  --primary-hover:      var(--snoopy-brown-dark);
+  --accent:             var(--snoopy-accent);
+
+  /* Backwards compatibility for legacy variable names */
+  --brand-caramel:      var(--snoopy-accent);
+  --bg-glass:           rgba(255,255,255,0.6);
+  --border-subtle:      var(--snoopy-border);
+
+  /* Backgrounds */
+  --bg-main:            var(--snoopy-white);
+  --bg-section:         var(--snoopy-cream);
+  --bg-muted:           #faf6f2;
+
+  /* Text */
+  --text-main:          var(--snoopy-black);
+  --text-muted:         var(--snoopy-muted);
+
+  /* Spacing */
+  --space-xs:   4px;
+  --space-sm:   8px;
+  --space-md:   16px;
+  --space-lg:   24px;
+  --space-xl:   32px;
+  --space-2xl:  48px;
+  --space-3xl:  64px;
+
+  /* Border Radius */
+  --radius-sm:   6px;
+  --radius-md:   12px;
+  --radius-lg:   16px;
+  --radius-full: 9999px;
+
+  /* Header */
+  --header-height: 72px;
+
+  /* Shadows */
+  --shadow-sm:  0 2px 6px rgba(30,20,15,0.06);
+  --shadow-md:  0 8px 24px rgba(30,20,15,0.10);
+
+  /* Typography */
+  --font-main: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  --font-heading: 'Playfair Display', 'Georgia', serif;
+
+  /* Legacy compat */
+  --tch-black:  var(--snoopy-black);
+  --tch-white:  var(--snoopy-white);
+  --tch-border: var(--snoopy-border);
+  --bg-gray:    #f5f0eb;
+  --text-secondary: var(--snoopy-muted);
+  --primary-hover: var(--snoopy-brown-dark);
+  --shadow-lg: 0 16px 48px rgba(30,20,15,0.14);
+}

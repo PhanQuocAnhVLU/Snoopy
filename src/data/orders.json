@@ -1,0 +1,61 @@
+[
+  {
+    "id": "ORD001",
+    "orderNumber": "BRV-20240115-001",
+    "customerId": "GUEST",
+    "customerName": "Nguyễn Văn An",
+    "customerPhone": "0901234567",
+    "items": [
+      { "productId": "CF002", "name": "Cappuccino Velluto", "size": "M", "quantity": 2, "unitPrice": 75000, "note": "Ít đường" },
+      { "productId": "CF011", "name": "Croissant Bơ", "size": "Regular", "quantity": 1, "unitPrice": 45000, "note": "" }
+    ],
+    "subtotal": 195000,
+    "discount": 0,
+    "total": 195000,
+    "status": "completed",
+    "paymentMethod": "cash",
+    "orderType": "takeaway",
+    "createdAt": "2024-01-15T08:30:00",
+    "completedAt": "2024-01-15T08:37:00",
+    "note": ""
+  },
+  {
+    "id": "ORD002",
+    "orderNumber": "BRV-20240115-002",
+    "customerId": "MEM001",
+    "customerName": "Trần Thị Bích",
+    "customerPhone": "0912345678",
+    "items": [
+      { "productId": "CF008", "name": "Vietnamese Phin", "size": "Sữa đá", "quantity": 1, "unitPrice": 60000, "note": "Thêm đường" },
+      { "productId": "CF005", "name": "Caramel Macchiato", "size": "L", "quantity": 1, "unitPrice": 95000, "note": "" }
+    ],
+    "subtotal": 155000,
+    "discount": 15500,
+    "total": 139500,
+    "status": "preparing",
+    "paymentMethod": "momo",
+    "orderType": "takeaway",
+    "createdAt": "2024-01-15T09:15:00",
+    "completedAt": null,
+    "note": "Giao đến cổng"
+  },
+  {
+    "id": "ORD003",
+    "orderNumber": "BRV-20240115-003",
+    "customerId": "GUEST",
+    "customerName": "Lê Hoàng Nam",
+    "customerPhone": "0923456789",
+    "items": [
+      { "productId": "CF004", "name": "Cold Brew Nitro", "size": "L", "quantity": 1, "unitPrice": 95000, "note": "" }
+    ],
+    "subtotal": 95000,
+    "discount": 0,
+    "total": 95000,
+    "status": "ready",
+    "paymentMethod": "card",
+    "orderType": "takeaway",
+    "createdAt": "2024-01-15T09:45:00",
+    "completedAt": null,
+    "note": ""
+  }
+]

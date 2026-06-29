@@ -1,0 +1,122 @@
+[
+  {
+    "id": "c1",
+    "name": "Cà Phê Sữa Đá Truyền Thống",
+    "category": "vietnamese",
+    "price": 35000,
+    "available": true,
+    "sizes": ["S", "M", "L"],
+    "image": "/images/ca_phe_sua_da.png",
+    "badge": "Bestseller"
+  },
+  {
+    "id": "c2",
+    "name": "Bạc Xỉu",
+    "category": "vietnamese",
+    "price": 39000,
+    "available": true,
+    "sizes": ["S", "M", "L"],
+    "image": "/images/bac_xiu.png",
+    "badge": ""
+  },
+  {
+    "id": "c3",
+    "name": "Cà Phê Đen Đá",
+    "category": "vietnamese",
+    "price": 35000,
+    "available": true,
+    "sizes": ["S", "M", "L"],
+    "image": "/images/ca_phe_den_da.png",
+    "badge": ""
+  },
+  {
+    "id": "e1",
+    "name": "Espresso (Hot)",
+    "category": "espresso",
+    "price": 45000,
+    "available": true,
+    "sizes": ["S"],
+    "image": "/images/espresso.png",
+    "badge": ""
+  },
+  {
+    "id": "e2",
+    "name": "Cappuccino",
+    "category": "espresso",
+    "price": 55000,
+    "available": true,
+    "sizes": ["M", "L"],
+    "image": "/images/cappuccino.png",
+    "badge": "New"
+  },
+  {
+    "id": "e3",
+    "name": "Caffè Latte",
+    "category": "espresso",
+    "price": 55000,
+    "available": true,
+    "sizes": ["M", "L"],
+    "image": "https://images.unsplash.com/photo-1514432324607-a09d9b4aefdd?auto=format&fit=crop&q=80&w=600",
+    "badge": ""
+  },
+  {
+    "id": "cb1",
+    "name": "Cold Brew Truyền Thống",
+    "category": "cold",
+    "price": 50000,
+    "available": true,
+    "sizes": ["M", "L"],
+    "image": "https://images.unsplash.com/photo-1461023058943-07fcbe16d735?auto=format&fit=crop&q=80&w=600",
+    "badge": "Must try"
+  },
+  {
+    "id": "cb2",
+    "name": "Cold Brew Sữa Macchiato",
+    "category": "cold",
+    "price": 59000,
+    "available": true,
+    "sizes": ["M", "L"],
+    "image": "https://images.unsplash.com/photo-1495474472287-4d71bcdd2085?auto=format&fit=crop&q=80&w=600",
+    "badge": ""
+  },
+  {
+    "id": "t1",
+    "name": "Trà Đào Cam Sả",
+    "category": "specialty",
+    "price": 49000,
+    "available": true,
+    "sizes": ["M", "L"],
+    "image": "https://images.unsplash.com/photo-1556679343-c7306c1976bc?auto=format&fit=crop&q=80&w=600",
+    "badge": "Bestseller"
+  },
+  {
+    "id": "t2",
+    "name": "Trà Matcha Latte",
+    "category": "specialty",
+    "price": 55000,
+    "available": true,
+    "sizes": ["M", "L"],
+    "image": "https://images.unsplash.com/photo-1515823064-d6e0c04616a7?auto=format&fit=crop&q=80&w=600",
+    "badge": ""
+  },
+  {
+    "id": "f1",
+    "name": "Bánh Croissant Bơ",
+    "category": "food",
+    "price": 35000,
+    "available": true,
+    "sizes": ["S"],
+    "image": "https://images.unsplash.com/photo-1555507036-ab1f4038808a?auto=format&fit=crop&q=80&w=600",
+    "badge": ""
+  },
+  {
+    "id": "f2",
+    "name": "Bánh Tiramisu",
+    "category": "food",
+    "price": 45000,
+    "available": true,
+    "sizes": ["S"],
+    "image": "https://images.unsplash.com/photo-1571877227200-a0d98ea607e9?auto=format&fit=crop&q=80&w=600",
+    "badge": "New"
+  }
+]
