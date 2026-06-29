@@ -2,17 +2,24 @@ import { initializeApp } from 'firebase/app';
 import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY,
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN,
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID,
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET,
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID,
-  appId: import.meta.env.VITE_FIREBASE_APP_ID
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "dummy",
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || "dummy",
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "dummy",
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || "dummy",
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "dummy",
+  appId: import.meta.env.VITE_FIREBASE_APP_ID || "dummy"
 };
 
-// Khởi tạo Firebase
-const app = initializeApp(firebaseConfig);
+let app;
+let auth;
+let googleProvider;
 
-// Khởi tạo các dịch vụ
-export const auth = getAuth(app);
-export const googleProvider = new GoogleAuthProvider();
+try {
+  app = initializeApp(firebaseConfig);
+  auth = getAuth(app);
+  googleProvider = new GoogleAuthProvider();
+} catch (error) {
+  console.warn("Firebase initialization failed (probably missing config):", error);
+}
+
+export { auth, googleProvider };
