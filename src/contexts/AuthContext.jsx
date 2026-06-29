@@ -147,8 +147,21 @@ export const AuthProvider = ({ children }) => {
 
   const loginWithGoogle = async () => {
     try {
-      const result = await signInWithPopup(auth, googleProvider);
-      const fbUser = result.user;
+      let fbUser;
+      
+      // Fallback: If Firebase is not configured (e.g. on Vercel without env vars), use a mock user
+      if (!auth || !googleProvider) {
+        console.warn("Firebase not configured. Using mock Google login.");
+        fbUser = {
+          email: 'user@gmail.com',
+          displayName: 'Người Dùng Google (Mock)',
+          photoURL: 'https://i.pravatar.cc/150?img=50',
+          phoneNumber: ''
+        };
+      } else {
+        const result = await signInWithPopup(auth, googleProvider);
+        fbUser = result.user;
+      }
 
       let lsCustomers = [];
       try {
