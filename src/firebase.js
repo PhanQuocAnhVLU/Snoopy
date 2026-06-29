@@ -2,12 +2,13 @@ import { initializeApp } from 'firebase/app';
 import { getAuth, GoogleAuthProvider } from 'firebase/auth';
 
 const firebaseConfig = {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "dummy",
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || "dummy",
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "dummy",
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || "dummy",
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "dummy",
-  appId: import.meta.env.VITE_FIREBASE_APP_ID || "dummy"
+  apiKey: import.meta.env.VITE_FIREBASE_API_KEY || "AIzaSyAvq2UAvAcYthEZXKy36nEJ2eN-w5ELuZc",
+  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN || "snoopy-coffee-take-away.firebaseapp.com",
+  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID || "snoopy-coffee-take-away",
+  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET || "snoopy-coffee-take-away.firebasestorage.app",
+  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID || "624922929249",
+  appId: import.meta.env.VITE_FIREBASE_APP_ID || "1:624922929249:web:55ec3d4bf6eb07042fe220",
+  measurementId: import.meta.env.VITE_FIREBASE_MEASUREMENT_ID || "G-VCXMTG4QE1"
 };
 
 let app;
